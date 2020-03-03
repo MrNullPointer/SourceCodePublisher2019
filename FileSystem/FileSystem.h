@@ -2,7 +2,7 @@
 #define FILESYSTEM_H
 /////////////////////////////////////////////////////////////////////////////
 // FileSystem.h - Support file and directory operations                    //
-// ver 3.0                                                                 //
+// ver 2.8                                                                 //
 // ----------------------------------------------------------------------- //
 // copyright © Jim Fawcett, 2012                                           //
 // All rights granted provided that this notice is retained                //
@@ -80,12 +80,6 @@
  *
  * Maintenance History:
  * ====================
- * ver 3.0 : 22 Feb 2019
- * - Fixed bugs, found by Ammar Salam and Namen Parakh in Directory::remove
- *   and Directory::create, which returned the wrong boolean value, by
- *   replacing == with !=.
- * ver 2.9 : 06 Sep 2018
- * - Fixed bug in File::isGood() by returning result of comparison, not assignment
  * ver 2.8 : 23 Feb 2018
  * - Fixed bug in FileSystem.cpp main() which added one
  *   test for file open success.

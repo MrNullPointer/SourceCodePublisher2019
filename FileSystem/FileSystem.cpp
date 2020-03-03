@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////////////////////////
 // FileSystem.cpp - Support file and directory operations                  //
-// ver 3.0                                                                 //
+// ver 2.8                                                                 //
 // ----------------------------------------------------------------------- //
 // copyright © Jim Fawcett, 2012                                           //
 // All rights granted provided that this notice is retained                //
@@ -304,7 +304,7 @@ bool File::isGood()
     return (good_ = pIStream->good());
   if(pOStream != nullptr)
     return (good_ = pOStream->good());
-  return (good_ == false);
+  return (good_ = false);
 }
 //----< flushes output stream to its file >--------------------------------
 
