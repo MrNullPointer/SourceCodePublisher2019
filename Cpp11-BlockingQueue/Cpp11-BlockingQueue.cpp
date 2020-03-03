@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////
 // Cpp11-BlockingQueue.cpp - Thread-safe Blocking Queue      //
-// ver 1.3                                                   //
+// ver 1.4                                                   //
 // Jim Fawcett, CSE687 - Object Oriented Design, Spring 2013 //
 ///////////////////////////////////////////////////////////////
 
@@ -14,6 +14,7 @@
 #include "Cpp11-BlockingQueue.h"
 
 #ifdef TEST_BLOCKINGQUEUE
+
 
 std::mutex ioLock;
 
@@ -55,8 +56,8 @@ int main()
   t.join();
 
   std::cout << "\n";
-  std::cout << "\n  Move construction of BlockingQueue";
-  std::cout << "\n ------------------------------------";
+  std::cout << "\n  Making move copy of BlockingQueue";
+  std::cout << "\n -----------------------------------";
 
   std::string msg = "test";
   q.enQ(msg);
